@@ -114,7 +114,7 @@ export const Skills = () => {
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: i * 0.07 }}
                 whileHover={{ y: -6 }}
-                className="group relative bg-surface-elevated/5 border border-background/15 backdrop-blur rounded-3xl p-7 hover:border-primary-glow transition-smooth"
+                className="group relative bg-white/5 border border-white/15 backdrop-blur rounded-3xl p-7 hover:border-primary-glow transition-smooth"
               >
                 <div className="flex items-center justify-between mb-6">
                   <div className="size-14 grid place-items-center rounded-2xl bg-primary text-primary-foreground group-hover:scale-110 group-hover:rotate-6 transition-smooth">
@@ -126,9 +126,9 @@ export const Skills = () => {
                 </div>
 
                 <h3 className="font-display text-2xl font-bold mb-3">{s.title}</h3>
-                <p className="text-sm text-background/70 leading-relaxed mb-6">{s.desc}</p>
+                <p className="text-sm text-white/70 leading-relaxed mb-6">{s.desc}</p>
 
-                <div className="h-1.5 bg-background/10 rounded-full overflow-hidden">
+                <div className="h-1.5 bg-white/10 rounded-full overflow-hidden">
                   <motion.div
                     initial={{ width: 0 }}
                     whileInView={{ width: `${s.progress}%` }}
