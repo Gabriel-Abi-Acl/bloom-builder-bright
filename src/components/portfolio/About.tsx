@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import sobre from "@/assets/manuella-sobre.jpg";
+import { Terminal, Sparkles, Heart, Code2 } from "lucide-react";
 
 const stats = [
   { k: "17", v: "Anos" },
@@ -19,13 +19,55 @@ export const About = () => {
           transition={{ duration: 0.7 }}
           className="lg:col-span-5 lg:sticky lg:top-32"
         >
+          {/* Creative card: terminal + identity */}
           <div className="relative">
             <div className="absolute -inset-4 bg-accent rounded-3xl -rotate-3" />
-            <img
-              src={sobre}
-              alt="Manuella Zanola sorrindo"
-              className="relative rounded-3xl border-4 border-foreground shadow-bold w-full object-cover aspect-[4/5]"
-            />
+            <div className="relative rounded-3xl border-4 border-foreground shadow-bold bg-surface-elevated overflow-hidden">
+              {/* Terminal header */}
+              <div className="flex items-center justify-between px-5 py-3 border-b-2 border-foreground bg-foreground text-background">
+                <div className="flex items-center gap-2">
+                  <span className="size-3 rounded-full bg-destructive" />
+                  <span className="size-3 rounded-full bg-accent" />
+                  <span className="size-3 rounded-full bg-primary-glow" />
+                </div>
+                <span className="font-mono-disp text-[10px] uppercase tracking-widest opacity-70">~/manuella.dev</span>
+                <Terminal className="size-3.5 opacity-70" />
+              </div>
+
+              {/* Terminal body */}
+              <div className="p-6 font-mono-disp text-xs space-y-2 bg-surface-elevated">
+                <div><span className="text-primary">$</span> whoami</div>
+                <div className="text-muted-foreground pl-3">manuella.zanola</div>
+                <div><span className="text-primary">$</span> cat focus.json</div>
+                <div className="pl-3 leading-relaxed">
+                  <span className="text-muted-foreground">{"{"}</span><br />
+                  <span className="pl-3 text-foreground">"role"</span>: <span className="text-primary">"TI Mobile / Dev Web"</span>,<br />
+                  <span className="pl-3 text-foreground">"stack"</span>: [<span className="text-primary">"JS"</span>, <span className="text-primary">"Vue"</span>, <span className="text-primary">"Kotlin"</span>],<br />
+                  <span className="pl-3 text-foreground">"mode"</span>: <span className="text-primary">"sempre aprendendo"</span><br />
+                  <span className="text-muted-foreground">{"}"}</span>
+                </div>
+                <div className="flex items-center gap-2 pt-2">
+                  <span className="text-primary">$</span>
+                  <span className="inline-block w-2 h-3.5 bg-foreground animate-pulse" />
+                </div>
+              </div>
+
+              {/* Quick chips */}
+              <div className="grid grid-cols-3 border-t-2 border-foreground divide-x-2 divide-foreground">
+                <div className="p-4 flex flex-col items-center gap-1">
+                  <Code2 className="size-4 text-primary" />
+                  <span className="font-mono-disp text-[9px] uppercase tracking-widest text-muted-foreground">code</span>
+                </div>
+                <div className="p-4 flex flex-col items-center gap-1">
+                  <Sparkles className="size-4 text-accent-foreground" />
+                  <span className="font-mono-disp text-[9px] uppercase tracking-widest text-muted-foreground">create</span>
+                </div>
+                <div className="p-4 flex flex-col items-center gap-1">
+                  <Heart className="size-4 text-primary" />
+                  <span className="font-mono-disp text-[9px] uppercase tracking-widest text-muted-foreground">care</span>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="mt-10 grid grid-cols-2 gap-3">
