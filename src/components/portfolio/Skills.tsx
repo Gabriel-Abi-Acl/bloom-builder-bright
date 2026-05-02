@@ -1,54 +1,89 @@
 import { motion } from "framer-motion";
-import { Palette, Code2, FileSpreadsheet, Languages, Braces, Layout } from "lucide-react";
+import { Palette, Code2, FileSpreadsheet, Languages, Braces, Layout, Smartphone, Apple, FileCode2, Component, Sparkles } from "lucide-react";
 
 const skills = [
   {
-    icon: Palette,
-    title: "UI/UX Design",
-    level: "Foco principal",
+    icon: Layout,
+    title: "Dev Web",
+    level: "Em evolução",
     progress: 70,
-    desc: "Criação de interfaces agradáveis e intuitivas. Pesquisa em experiência do usuário, prototipação no Figma e princípios de usabilidade.",
+    desc: "HTML, CSS e fundamentos de design responsivo. Foco em estrutura semântica, layouts modernos e boas práticas visuais.",
   },
   {
-    icon: Layout,
-    title: "Frontend",
-    level: "Em evolução",
-    progress: 65,
-    desc: "HTML, CSS e fundamentos de design responsivo. Foco em estrutura semântica, layouts modernos e boas práticas visuais.",
+    icon: FileCode2,
+    title: "JavaScript",
+    level: "Em prática",
+    progress: 60,
+    desc: "Lógica, manipulação de DOM e interatividade. Base essencial para desenvolvimento web moderno e frameworks atuais.",
+  },
+  {
+    icon: Component,
+    title: "Vue.js",
+    level: "Aprendendo",
+    progress: 45,
+    desc: "Framework progressivo para construir interfaces reativas, componentes reutilizáveis e SPAs elegantes.",
+  },
+  {
+    icon: Palette,
+    title: "UI/UX Design",
+    level: "Complemento",
+    progress: 70,
+    desc: "Prototipação no Figma, princípios de usabilidade e pesquisa em experiência do usuário aplicadas ao desenvolvimento.",
+  },
+  {
+    icon: Smartphone,
+    title: "Kotlin",
+    level: "Iniciante",
+    progress: 35,
+    desc: "Linguagem oficial para desenvolvimento Android. Sintaxe moderna, segura e expressiva para apps mobile nativos.",
+  },
+  {
+    icon: Apple,
+    title: "Swift",
+    level: "Iniciante",
+    progress: 30,
+    desc: "Linguagem da Apple para iOS, iPadOS e macOS. Performance nativa com sintaxe limpa e segura.",
   },
   {
     icon: Code2,
     title: "Python",
     level: "Iniciante",
     progress: 40,
-    desc: "Sintaxe simples, lógica de programação e produtividade. Linguagem versátil que abre portas para automação e ciência de dados.",
+    desc: "Sintaxe simples, lógica de programação e produtividade. Versátil para automação, dados e back-end.",
   },
   {
     icon: Braces,
     title: "C#",
     level: "Iniciante",
     progress: 35,
-    desc: "Estruturas de matriz, repetição e vetores. Base sólida para futuro desenvolvimento em desktop, web e jogos.",
+    desc: "Estruturas de matriz, repetição e vetores. Base sólida para desktop, web e jogos.",
+  },
+  {
+    icon: Sparkles,
+    title: "Eng. de Prompt",
+    level: "Em prática",
+    progress: 75,
+    desc: "Construção de prompts eficazes para LLMs, automação de tarefas e integração de IA em fluxos de trabalho.",
   },
   {
     icon: Languages,
     title: "Inglês",
     level: "Avançado · C1",
     progress: 90,
-    desc: "Fundamental para tecnologia: leitura de documentação, cursos internacionais e comunicação em ambientes globais.",
+    desc: "Fundamental para tecnologia: leitura de documentação, cursos internacionais e comunicação global.",
   },
   {
     icon: FileSpreadsheet,
     title: "Pacote Office",
     level: "Sólido",
     progress: 80,
-    desc: "Word, Excel e PowerPoint para organização de dados, criação de documentos e apresentações de impacto.",
+    desc: "Word, Excel e PowerPoint para organização de dados, documentos e apresentações de impacto.",
   },
 ];
 
 export const Skills = () => {
   return (
-    <section id="habilidades" className="py-32 bg-ink text-background relative overflow-hidden">
+    <section id="habilidades" className="py-32 bg-ink text-[hsl(32_50%_96%)] relative overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-10 pointer-events-none" />
       <div className="absolute top-20 right-10 size-96 rounded-full bg-primary/20 blur-3xl pointer-events-none" />
 
@@ -79,7 +114,7 @@ export const Skills = () => {
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: i * 0.07 }}
                 whileHover={{ y: -6 }}
-                className="group relative bg-surface-elevated/5 border border-background/15 backdrop-blur rounded-3xl p-7 hover:border-primary-glow transition-smooth"
+                className="group relative bg-white/5 border border-white/15 backdrop-blur rounded-3xl p-7 hover:border-primary-glow transition-smooth"
               >
                 <div className="flex items-center justify-between mb-6">
                   <div className="size-14 grid place-items-center rounded-2xl bg-primary text-primary-foreground group-hover:scale-110 group-hover:rotate-6 transition-smooth">
@@ -91,9 +126,9 @@ export const Skills = () => {
                 </div>
 
                 <h3 className="font-display text-2xl font-bold mb-3">{s.title}</h3>
-                <p className="text-sm text-background/70 leading-relaxed mb-6">{s.desc}</p>
+                <p className="text-sm text-white/70 leading-relaxed mb-6">{s.desc}</p>
 
-                <div className="h-1.5 bg-background/10 rounded-full overflow-hidden">
+                <div className="h-1.5 bg-white/10 rounded-full overflow-hidden">
                   <motion.div
                     initial={{ width: 0 }}
                     whileInView={{ width: `${s.progress}%` }}

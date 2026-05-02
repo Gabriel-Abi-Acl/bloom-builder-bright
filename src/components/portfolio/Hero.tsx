@@ -49,8 +49,7 @@ export const Hero = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-lg md:text-xl max-w-xl text-muted-foreground leading-relaxed"
           >
-            Estudante de <strong className="text-foreground">Informática</strong> apaixonada por{" "}
-            <strong className="text-primary">UI/UX Design</strong> — unindo tecnologia e design para criar interfaces que conversam com pessoas.
+            Estudante de <strong className="text-foreground">TI Mobile / Dev Web</strong> — explorando código, design e novas tecnologias para construir produtos digitais com propósito.
           </motion.p>
 
           <motion.blockquote
@@ -96,16 +95,7 @@ export const Hero = () => {
             <img src={perfil} alt="Foto de Manuella Zanola" className="w-full h-full object-cover" />
           </div>
 
-          {/* Floating badges */}
-          <motion.div
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute -left-6 top-12 bg-accent text-accent-foreground rounded-2xl px-4 py-3 border-2 border-foreground shadow-bold-pink"
-          >
-            <div className="font-mono-disp text-[10px] uppercase opacity-70">Foco</div>
-            <div className="font-display font-bold">UI / UX</div>
-          </motion.div>
-
+          {/* Floating badge */}
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
@@ -122,7 +112,7 @@ export const Hero = () => {
         <div className="flex animate-marquee whitespace-nowrap font-display text-3xl md:text-5xl font-black">
           {Array.from({ length: 2 }).map((_, i) => (
             <div key={i} className="flex items-center gap-8 pr-8">
-              {["UI/UX Design", "✦", "Frontend", "✦", "Criatividade", "✦", "Python", "✦", "C#", "✦", "Inglês C1", "✦"].map((t, j) => (
+              {["Dev Web", "✦", "Mobile", "✦", "UI/UX", "✦", "JavaScript", "✦", "Vue.js", "✦", "Python", "✦", "C#", "✦", "Kotlin", "✦", "Swift", "✦", "Eng. Prompt", "✦", "Inglês C1", "✦"].map((t, j) => (
                 <span key={`${i}-${j}`} className={j % 2 === 0 ? "text-background" : "text-primary"}>
                   {t}
                 </span>
