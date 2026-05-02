@@ -95,16 +95,7 @@ export const Hero = () => {
             <img src={perfil} alt="Foto de Manuella Zanola" className="w-full h-full object-cover" />
           </div>
 
-          {/* Floating badges */}
-          <motion.div
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute -left-6 top-12 bg-accent text-accent-foreground rounded-2xl px-4 py-3 border-2 border-foreground shadow-bold-pink"
-          >
-            <div className="font-mono-disp text-[10px] uppercase opacity-70">Foco</div>
-            <div className="font-display font-bold">UI / UX</div>
-          </motion.div>
-
+          {/* Floating badge */}
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
