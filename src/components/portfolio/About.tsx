@@ -101,7 +101,7 @@ export const About = () => {
               Meu nome é <strong className="text-foreground">Manuella Sofia Braga Zanola Souza</strong>, tenho 17 anos e sou estudante do curso técnico em Informática no <strong className="text-foreground">Colégio e Faculdade Cotemig</strong> (unidade Barroca).
             </p>
             <p>
-              Tenho grande interesse nas áreas de informática e <strong className="text-foreground">design UI/UX</strong>, buscando sempre aprender mais sobre experiência do usuário e interfaces intuitivas. Meu objetivo é aplicar meus conhecimentos, aprimorar minhas habilidades e contribuir com soluções criativas e proativas.
+              Tenho grande interesse pela área de <strong className="text-foreground">Tecnologia da Informação</strong>, com foco em <strong className="text-foreground">desenvolvimento web</strong> e <strong className="text-foreground">mobile</strong>. Gosto de explorar diferentes linguagens, frameworks e ferramentas, sempre buscando aplicar boas práticas e contribuir com soluções criativas, funcionais e bem desenhadas.
             </p>
             <p>
               Atualmente, estou no 3º ano do curso técnico, com previsão de conclusão em <strong className="text-foreground">dezembro de 2026</strong>, e sigo dedicada a expandir meu conhecimento em tecnologia, design e inovação.
