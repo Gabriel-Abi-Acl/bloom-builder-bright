@@ -83,7 +83,7 @@ const skills = [
 
 export const Skills = () => {
   return (
-    <section id="habilidades" className="py-32 bg-ink text-background relative overflow-hidden">
+    <section id="habilidades" className="py-32 bg-ink text-[hsl(32_50%_96%)] relative overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-10 pointer-events-none" />
       <div className="absolute top-20 right-10 size-96 rounded-full bg-primary/20 blur-3xl pointer-events-none" />
 
