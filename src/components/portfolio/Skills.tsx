@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Palette, Code2, FileSpreadsheet, Languages, Braces, Layout } from "lucide-react";
+import { Palette, Code2, FileSpreadsheet, Languages, Braces, Layout, Smartphone, Apple, FileCode2, Component, Sparkles } from "lucide-react";
 
 const skills = [
   {
